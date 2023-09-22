@@ -1,6 +1,7 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:wakeduino_remote/screens/home_screen.dart';
 import 'package:wakeduino_remote/singletons/wakeduino.dart';
 import 'package:wakeduino_remote/view/device_list.dart';
@@ -19,6 +20,7 @@ class App extends StatelessWidget {
 
 
     return MaterialApp(
+      builder: FToastBuilder(),
       title: 'WakeDuino',
         theme: ThemeData(
             primarySwatch: Functions.createMaterialColor(const Color(0xFF0a9ba0))
