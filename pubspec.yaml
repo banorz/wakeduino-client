@@ -38,6 +38,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   shared_preferences: ^2.2.1
   settings_ui: ^2.0.2
+  confirm_dialog: ^1.0.2
   prompt_dialog: ^1.0.13
   tcp_socket_connection: ^0.3.1
 

@@ -33,6 +33,7 @@ class DeviceRepository {
     if(addresses!=null){
       if(addresses.contains(device.macAddress)){
         addresses.remove(device.macAddress);
+        pref.setStringList("macAddresses", addresses);
       }
       else {
         throw NotExistsException(device.macAddress);
@@ -70,5 +71,6 @@ class DeviceRepository {
       return DeviceModel(name: deviceName, macAddress: macAddress);
     }
   }
+
 
 }

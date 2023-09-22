@@ -88,6 +88,27 @@ class SettingsScreen extends StatelessWidget {
                       WakeDuino().setKey(key);
                     }
                   },
+                ),
+                SettingsTile(
+                  leading: const Icon(Icons.key),
+                  title: const Text('Key'),
+                  onPressed: (BuildContext context) async {
+                    String initialValue = await WakeDuino().getKey();
+                    if (!context.mounted) return;
+                    String? key = await prompt(context, hintText: "insert secret key",
+                        initialValue: initialValue,
+                        obscureText: true,
+                        validator: (String? value) {
+                          if (value == null || value.isEmpty) {
+                            return 'Please enter a key';
+                          }
+                          return null;
+                        },
+                        title: const Text('WakeDuino Secret Key'));
+                    if(key!=null){
+                      WakeDuino().setKey(key);
+                    }
+                  },
                 )
               ],
             ),

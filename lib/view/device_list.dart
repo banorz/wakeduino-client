@@ -1,3 +1,4 @@
+import 'package:confirm_dialog/confirm_dialog.dart';
 import 'package:tcp_socket_connection/tcp_socket_connection.dart';
 
 import 'package:flutter/material.dart';
@@ -42,6 +43,17 @@ class DeviceListState extends State<DeviceList> {
         return ListTile(
             title: item.buildTitle(context),
             subtitle: item.buildSubtitle(context),
+            onLongPress: () async {
+              if (await confirm(context,
+                  title: const Text('Delete device'),
+                  content: const Text('Are you sure?'),
+                  textOK: const Text('Yes'),
+                  textCancel: const Text('No'))) {
+                DeviceRepository().remove(device);
+                refresh();
+              }
+              return;
+            },
             onTap: () async {
               String hostname = await WakeDuino().getHostname();
               int port = await WakeDuino().getPort();
