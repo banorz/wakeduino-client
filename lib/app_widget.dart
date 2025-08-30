@@ -21,6 +21,8 @@ class App extends StatelessWidget {
 
     return MaterialApp(
       builder: FToastBuilder(),
+
+      debugShowCheckedModeBanner: false,
       title: 'WakeDuino',
         theme: ThemeData(
             primarySwatch: Functions.createMaterialColor(const Color(0xFF0a9ba0))

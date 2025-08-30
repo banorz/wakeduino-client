@@ -69,7 +69,6 @@ class InsertScreen extends StatelessWidget {
 
                           child: TextButton(
                             style: TextButton.styleFrom(
-                              primary: Colors.white,
                               backgroundColor: Colors.grey,
                               minimumSize: Size(80, 70),
 
@@ -86,7 +85,6 @@ class InsertScreen extends StatelessWidget {
                       Expanded(
                           child: TextButton(
                             style: TextButton.styleFrom(
-                              primary: Colors.white,
                               backgroundColor: Colors.blue,
                               minimumSize: Size(80, 70),
 

@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "it.banorz" "\0"
-            VALUE "FileDescription", "wakeduino_remote" "\0"
+            VALUE "CompanyName", "banorz" "\0"
+            VALUE "FileDescription", "WakeDuino" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "wakeduino_remote" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2023 it.banorz. All rights reserved." "\0"
+            VALUE "InternalName", "WakeDuino" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2023 banorz. All rights reserved." "\0"
             VALUE "OriginalFilename", "wakeduino_remote.exe" "\0"
-            VALUE "ProductName", "wakeduino_remote" "\0"
+            VALUE "ProductName", "WakeDuino" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

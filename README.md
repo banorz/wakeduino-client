@@ -1,16 +1,15 @@
-# wakeduino_remote
+# WakeDuino
+WakeDuino is a DIY project that allows you to wake up your devices remotely using Wake-on-LAN (WoL) technology.
+It consists of an Arduino connected to your network, which listens for WoL packets and sends them to the target device.
+Check out also the server sketch for Arduino: https://github.com/banorz/wakeduino-server
 
-Remote application for WakeDuino. Wake your devices from your mobile/desktop smartphone or PC!
+# WakeDuino Requirements
+- An Arduino board (e.g., Arduino Uno, Arduino Nano)
+- Ethernet or Wi-Fi shield/module for network connectivity
 
-## Getting Started
+# WakeDuino Client (Remote App)
+Remote application for WakeDuino. Wake your devices from your mobile/desktop smartphone or PC! 
+Flutter-based app for Android, iOS, Windows, macOS, and Linux. Only Android and Windows have been tested.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
